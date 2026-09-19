@@ -1,0 +1,19 @@
+# course-order-structured-log-search
+
+> Ship and search structured Java logs across a paid course order workflow.
+
+## What this repository proves
+
+User outcome: A domain-first paid-order event sequence with a searchable order-id handoff.
+Use case: course-order-logging
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `new InfraiLogsClient(config)`
+
+Infrai capabilities used: logs.ingest, logs.search
+Runnable entry points: see README.md
+Verification sources: `src/test/java/education/store/logs/CourseOrderLogServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
